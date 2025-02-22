@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Advice generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="title">ADVICE # <span></span></div>
+        <div class="quote">
+          <p>Press the button below</p>
+          <span class="pattern-image"
+            ><img src="./images/pattern-divider-mobile.svg" alt="image pattern"
+          /></span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-advice" title="New Advice ">
+            <img src="./images/icon-dice.svg" alt="" />
+          </button>
+
+          <button class="btn btn-save" title="Save Advice ">
+            <img src="./images/icon-bookmark.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="scroll hidden">
+          <table>
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>ADVICE</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
